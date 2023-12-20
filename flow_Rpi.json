@@ -1,0 +1,759 @@
+[
+    {
+        "id": "1642b5a02f039d34",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4c123d42b92071fe",
+        "type": "serial-port",
+        "serialport": "/dev/ttyACM0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "d293caa79ffe74ad",
+        "type": "ui_group",
+        "name": "Historique",
+        "tab": "8021c8d9af774365",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8021c8d9af774365",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fdf1765c3785f64a",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f95e949178045078",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "ecg",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "stud",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "87a3934b2a457cc1",
+        "type": "postgresdb",
+        "hostname": "localhost",
+        "port": "5432",
+        "db": "ecg",
+        "ssl": false
+    },
+    {
+        "id": "1eabbf6349575151",
+        "type": "ui_tab",
+        "name": "HR",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b614760759925301",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "1eabbf6349575151",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b07ce62f7b6e1c6a",
+        "type": "ui_group",
+        "name": "Rythme cardiaque",
+        "tab": "8021c8d9af774365",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e859ff37f1e18723",
+        "type": "serial in",
+        "z": "1642b5a02f039d34",
+        "name": "ttyACM0",
+        "serial": "4c123d42b92071fe",
+        "x": 80,
+        "y": 300,
+        "wires": [
+            [
+                "a6910b2fcd2cbc71"
+            ]
+        ]
+    },
+    {
+        "id": "cc85cf23714e9ffa",
+        "type": "switch",
+        "z": "1642b5a02f039d34",
+        "name": "Filtre_sup_89",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "89",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 400,
+        "wires": [
+            [
+                "ac45886d37e288f2"
+            ]
+        ]
+    },
+    {
+        "id": "ac45886d37e288f2",
+        "type": "delay",
+        "z": "1642b5a02f039d34",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 500,
+        "y": 480,
+        "wires": [
+            [
+                "a4637c76ae5e07df"
+            ]
+        ]
+    },
+    {
+        "id": "a4637c76ae5e07df",
+        "type": "switch",
+        "z": "1642b5a02f039d34",
+        "name": "Filtre_sup_89",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "89",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 600,
+        "y": 400,
+        "wires": [
+            [
+                "a2d147eed979d2df"
+            ]
+        ]
+    },
+    {
+        "id": "a2d147eed979d2df",
+        "type": "trigger",
+        "z": "1642b5a02f039d34",
+        "name": "",
+        "op1": "",
+        "op2": "",
+        "op1type": "nul",
+        "op2type": "payl",
+        "duration": "1",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 720,
+        "y": 480,
+        "wires": [
+            [
+                "ac48433905b917af"
+            ]
+        ]
+    },
+    {
+        "id": "e2713ee0c0ed52b1",
+        "type": "postgresql",
+        "z": "1642b5a02f039d34",
+        "name": "sup 89 ecg",
+        "query": "INSERT INTO ecg (date, hr) VALUES (CURRENT_TIMESTAMP, {{msg.payload}});\n",
+        "postgreSQLConfig": "f95e949178045078",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1030,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac48433905b917af",
+        "type": "function",
+        "z": "1642b5a02f039d34",
+        "name": "function 1",
+        "func": "// Sépare les valeurs par des virgules\nvar valeurs = msg.payload.split(',');\n\n// Récupère la première valeur\nvar premiereValeur = valeurs[0];\n\n// Affiche la première valeur dans la console pour le débogage\nconsole.log(\"La première valeur de msg.payload est : \" + premiereValeur);\n\n// Modifie msg.payload pour contenir uniquement la première valeur\nmsg.payload = premiereValeur;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 400,
+        "wires": [
+            [
+                "e2713ee0c0ed52b1"
+            ]
+        ]
+    },
+    {
+        "id": "eb3a6f63309744a8",
+        "type": "rate-avg",
+        "z": "1642b5a02f039d34",
+        "name": "",
+        "windowtype": "time",
+        "timewindow": "1",
+        "timeunits": "minutes",
+        "countwindow": "10",
+        "round": "0",
+        "x": 480,
+        "y": 100,
+        "wires": [
+            [
+                "21b915ce4dbe5ab0"
+            ]
+        ]
+    },
+    {
+        "id": "ce5e13cf889a5b32",
+        "type": "function",
+        "z": "1642b5a02f039d34",
+        "name": "avg",
+        "func": "// Sépare les valeurs par des virgules\nvar valeurs = msg.payload.split(',');\n\n// Récupère la première valeur\nvar premiereValeur = valeurs[0];\n\n// Affiche la première valeur dans la console pour le débogage\n//console.log(\"La première valeur de msg.payload est : \" + premiereValeur);\n\n// Modifie msg.payload pour contenir uniquement la première valeur\nmsg.payload = premiereValeur;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 180,
+        "wires": [
+            [
+                "eb3a6f63309744a8"
+            ]
+        ]
+    },
+    {
+        "id": "21b915ce4dbe5ab0",
+        "type": "postgresql",
+        "z": "1642b5a02f039d34",
+        "name": "avg ecg",
+        "query": "INSERT INTO avgecg (date, hr) VALUES (CURRENT_TIMESTAMP, {{msg.payload}});\n",
+        "postgreSQLConfig": "f95e949178045078",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 640,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4344993fbb5d93f2",
+        "type": "rate-avg",
+        "z": "1642b5a02f039d34",
+        "name": "",
+        "windowtype": "time",
+        "timewindow": "1",
+        "timeunits": "seconds",
+        "countwindow": "10",
+        "round": "0",
+        "x": 680,
+        "y": 300,
+        "wires": [
+            [
+                "90360123cab62404"
+            ]
+        ]
+    },
+    {
+        "id": "b9013ca6b5e162d6",
+        "type": "function",
+        "z": "1642b5a02f039d34",
+        "name": "avg",
+        "func": "// Sépare les valeurs par des virgules\nvar valeurs = msg.payload.split(',');\n\n// Récupère la première valeur\nvar premiereValeur = valeurs[0];\n\n// Affiche la première valeur dans la console pour le débogage\n//console.log(\"La première valeur de msg.payload est : \" + premiereValeur);\n\n// Modifie msg.payload pour contenir uniquement la première valeur\nmsg.payload = premiereValeur;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 300,
+        "wires": [
+            [
+                "4344993fbb5d93f2"
+            ]
+        ]
+    },
+    {
+        "id": "33b85def781c6511",
+        "type": "function",
+        "z": "1642b5a02f039d34",
+        "name": "msg",
+        "func": "// Supposons que msg.payload contient le timestamp\nvar timestamp = msg.date1;\n\n// Créer un objet Date en utilisant le timestamp\nvar date = new Date(timestamp);\n\n// Ajuster l'heure pour le fuseau horaire \"Europe/Paris\"\ndate.setUTCHours(date.getUTCHours() - 1);\n\n// Récupérer l'heure, les minutes et les secondes\nvar heures = date.getHours();\nvar minutes = date.getMinutes();\nvar secondes = date.getSeconds();\n\n// Formater l'heure au format HH:mm:ss\nvar heureLisible = `${heures.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secondes.toString().padStart(2, '0')}`;\n\n// Ajouter la valeur lisible au message\nmsg.date1 = heureLisible;\n\n// Passez le message au nœud \"debug\"\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 660,
+        "wires": [
+            [
+                "c5c3301d658d4639"
+            ]
+        ]
+    },
+    {
+        "id": "6280141ea4223b5e",
+        "type": "ui_text_input",
+        "z": "1642b5a02f039d34",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "d293caa79ffe74ad",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "time",
+        "delay": 300,
+        "topic": "date1",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 260,
+        "y": 660,
+        "wires": [
+            [
+                "19f33af4d6f2185b"
+            ]
+        ]
+    },
+    {
+        "id": "37025034d196ceb1",
+        "type": "function",
+        "z": "1642b5a02f039d34",
+        "name": "msg1",
+        "func": "// Supposons que msg.payload contient le timestamp\nvar timestamp = msg.date2;\n\n// Créer un objet Date en utilisant le timestamp\nvar date = new Date(timestamp);\n\n// Ajuster l'heure pour le fuseau horaire \"Europe/Paris\"\ndate.setUTCHours(date.getUTCHours() - 1);\n\n// Récupérer l'heure, les minutes et les secondes\nvar heures = date.getHours();\nvar minutes = date.getMinutes();\nvar secondes = date.getSeconds();\n\n// Formater l'heure au format HH:mm:ss\nvar heureLisible = `${heures.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secondes.toString().padStart(2, '0')}`;\n\n// Ajouter la valeur lisible au message\nmsg.date2 = heureLisible;\n\n// Passez le message au nœud \"debug\"\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 740,
+        "wires": [
+            [
+                "c5c3301d658d4639"
+            ]
+        ]
+    },
+    {
+        "id": "af15663fcf70096f",
+        "type": "ui_text_input",
+        "z": "1642b5a02f039d34",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "d293caa79ffe74ad",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "time",
+        "delay": 300,
+        "topic": "date2",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 260,
+        "y": 740,
+        "wires": [
+            [
+                "c8ebbd4112d3ee4e"
+            ]
+        ]
+    },
+    {
+        "id": "19f33af4d6f2185b",
+        "type": "change",
+        "z": "1642b5a02f039d34",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "date1",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 660,
+        "wires": [
+            [
+                "33b85def781c6511"
+            ]
+        ]
+    },
+    {
+        "id": "c8ebbd4112d3ee4e",
+        "type": "change",
+        "z": "1642b5a02f039d34",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "date2",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 740,
+        "wires": [
+            [
+                "37025034d196ceb1"
+            ]
+        ]
+    },
+    {
+        "id": "c5c3301d658d4639",
+        "type": "postgresql",
+        "z": "1642b5a02f039d34",
+        "name": "between",
+        "query": "SELECT date, hr FROM avgecg WHERE date BETWEEN (CURRENT_DATE || ' ' || '{{msg.date1}}')::timestamptz AND (CURRENT_DATE || ' ' || '{{msg.date2}}')::timestamptz;\n",
+        "postgreSQLConfig": "f95e949178045078",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 860,
+        "y": 700,
+        "wires": [
+            [
+                "c68d66c442b9ffe3"
+            ]
+        ]
+    },
+    {
+        "id": "c68d66c442b9ffe3",
+        "type": "ui_table",
+        "z": "1642b5a02f039d34",
+        "group": "d293caa79ffe74ad",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 1050,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "90360123cab62404",
+        "type": "ui_chart",
+        "z": "1642b5a02f039d34",
+        "name": "",
+        "group": "b07ce62f7b6e1c6a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Evolution du HR",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1F77B4",
+            "#AEC7E8",
+            "#FF7F0E",
+            "#2CA02C",
+            "#98DF8A",
+            "#D62728",
+            "#FF9896",
+            "#9467BD",
+            "#C5B0D5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6910b2fcd2cbc71",
+        "type": "function",
+        "z": "1642b5a02f039d34",
+        "name": "function 2",
+        "func": "var valeurs = msg.payload.split(',');\nvar premiereValeur = valeurs[0];\nif(!isNaN(premiereValeur)){\n    msg.payload = premiereValeur;\n    return msg;\n}\nelse {\n    return null;\n} \n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 300,
+        "wires": [
+            [
+                "ce5e13cf889a5b32",
+                "b9013ca6b5e162d6",
+                "cc85cf23714e9ffa",
+                "2d2812966a3ad157"
+            ]
+        ]
+    },
+    {
+        "id": "e62ee8b2826a227a",
+        "type": "ui_table",
+        "z": "1642b5a02f039d34",
+        "group": "d293caa79ffe74ad",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 370,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "e2888dd05f25fb08",
+        "type": "postgresql",
+        "z": "1642b5a02f039d34",
+        "name": "between",
+        "query": "SELECT date, hr FROM ecg;",
+        "postgreSQLConfig": "f95e949178045078",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 240,
+        "y": 560,
+        "wires": [
+            [
+                "e62ee8b2826a227a"
+            ]
+        ]
+    },
+    {
+        "id": "2d2812966a3ad157",
+        "type": "ui_gauge",
+        "z": "1642b5a02f039d34",
+        "name": "",
+        "group": "b07ce62f7b6e1c6a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "HR",
+        "label": "units",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "180",
+        "colors": [
+            "#c80000",
+            "#00c800",
+            "#c80000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 220,
+        "wires": []
+    }
+]
